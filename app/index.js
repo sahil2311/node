@@ -5,7 +5,7 @@ const http = require('http');
 
 // These could (should) be set as env vars.
 const port = process.env.PORT || 5000;
-const host = process.env.HOST || '0.0.0';
+const host = process.env.HOST || '0.0.0.0';
 
 // No matter what hits the server, we send the same thing.
 http.createServer((req, res) => {
